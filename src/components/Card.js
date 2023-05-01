@@ -20,13 +20,13 @@ const Card = ({data, rightHandler, leftHandler, surpriseHandler}) => {
         {/* right quote icon */}
 
         <div className='flex gap-6 my-4 text-purple-400 text-2xl'>
-            <FaChevronLeft onClick={leftHandler} className=' cursor-pointer hover:text-purple-600'></FaChevronLeft>
+            <FaChevronLeft onClick={leftHandler} className=' cursor-pointer hover:text-purple-600 hover:outline-double'></FaChevronLeft>
             {/* left slider icon */}
-            <FaChevronRight onClick={rightHandler} className=' cursor-pointer hover:text-purple-600'></FaChevronRight>
+            <FaChevronRight onClick={rightHandler} className=' cursor-pointer hover:text-purple-600 hover:outline-double'></FaChevronRight>
             {/* right slider icon */}
 
         </div>
-        <button onClick={surpriseHandler} className=' bg-purple-400 text-white text-lg font-semibold p-2 px-8 rounded-md hover:bg-purple-600 mt-4'>Surprise Me</button>
+        <button onClick={surpriseHandler} className=' bg-purple-400 text-white text-lg font-semibold p-2 px-8 rounded-md hover:bg-purple-600 mt-4 select-none'>Surprise Me</button>
 
     </div>
   )
